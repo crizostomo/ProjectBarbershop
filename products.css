@@ -29,6 +29,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
 .products {
     width: 940px;
     margin: 0 auto;
@@ -40,8 +45,29 @@ nav a {
 .products li {
     display: inline-block;
     text-align: center;
-    width: 33%;
+    width: 30%;
     vertical-align: top;
+    /*background: #CCCCCC; We just used this to see the sizes of this block*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*It helps to keep 100% the image sizes "Padding + Margin in lines 46 and 47*/
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    /*border: 2px solid #000000; the same thing as the lines 49-51*/
+    border-radius: 10px;
+}
+
+.products li:hover { /*hover is used when you want smt different when you pass your mouse above the text, image, etc*/
+    border-color: #C78C19;
+}
+
+.products li:active {
+    border-color: #088C19;
+}
+
+.products li:hover h2 {
+    font-size: 34px;
 }
 
 .products h2 {
@@ -56,4 +82,18 @@ nav a {
 .product-price {
     font-size: 22px;
     font-weight: bold;
+    margin: 10px 0 0;
+    /*margin-top: 10px; this is the same thing as the line above*/ 
+}
+
+footer {
+    text-align: center;
+    background: url("images-products/bg.jpg"); /*Add an image as background*/
+    padding: 40px 0;
+}
+
+.Copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
 }
