@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="reset/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="box">
+            <h1><img src="images-products/logo.png" alt="Alura barbershop logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contatc.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="namelastname"> Name and Last name</label>
+            <input type="text" id="namelastname" class="input-pattern" required> <!--Required means that the user MUST fill this gap-->
+
+            <label for="email"> Email</label>
+            <input type="email" id="email" class="input-pattern" required placeholder="youremail@domain.com"> <!--Placeholder means that a pre-config will be loaded until the user types smt-->
+
+            <label for="telephone"> Telephone</label>
+            <input type="tel" id="telephone" class="input-pattern" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="message">Message</label>
+            <textarea name="" id="Message" cols="30" rows="10" class="input-pattern" required></textarea>
+
+            <fieldset>
+                <legend>How do you prefer our contact?</legend>
+
+                <label for="radio-email"><input type="radio" name="contact" value="email" id="radio-email">Email</label>
+                
+                <label for="radio-telephone"><input type="radio" name="contact" value="telephone" id="radio-telephone">Telephone</label>
+                
+                <label for="radio-whatsApp"><input type="radio" name="contact" value="whatsApp" id="radio-whatsApp" checked>WhatsApp</label> <!--Checked means that this option will always be marked first-->
+            </fieldset>
+
+
+            <fieldset>
+                <legend>What time do you prefer to be contacted?</legend>
+                <select name="" id="">
+                    <option value="">Morning</option>
+                    <option value="">Afternoon</option>
+                    <option value="">At night</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Would you like to receive our news by email?</label>
+
+            <input type="submit" value="Send Form" class="send">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mondays</td>
+                    <td>8am - 8pm</td>
+                </tr>
+                <tr>
+                    <td>Wednesdays</td>
+                    <td>8am - 8pm</td>
+                </tr>
+                <tr>
+                    <td>Fridays</td>
+                    <td>8am - 8pm</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="images-products/logo-branco.png" alt="Alura Barbershop logo">
+        <p class="Copyright">&copy; Copyright Pirate Barbershop 2021</p>
+    </footer>
+    
+</body>
+</html>
